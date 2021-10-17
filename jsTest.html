@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="20211013Test.js" ></script>
+        <script>
+            function viewSolution() {
+                var n = 5;
+                var result = [[4, 3], [4, 2], [3, 2], [1, 2], [2, 5]];
+                var result = solution(n, result);
+                document.getElementById("console").innerHTML = result;
+            }
+        </script>
+    </head>
+    <body>
+        <div style="width:100%"><button onclick="viewSolution()">결과 출력</button></div>
+        <textarea id="console" rows="20" cols="50"></textarea>
+    </body>
+</html>
