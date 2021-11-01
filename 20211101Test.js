@@ -32,10 +32,10 @@
 //해설 ? https://tech.kakao.com/2017/11/14/kakao-blind-recruitment-round-3/
 function solution(n, t, m, p) {
     var answer = '';
-    let result = [];
-    let tmp = [];
-    let i = 1;
-    let num = 0;
+    let result = []; // 결과값이 들어가는 배열
+    let tmp = []; // 각각의 숫자를 진수로 변경해서 나오는 값을 저장하고있는 배열
+    let i = 1; // 몇번째 숫자를 말해야하는지 비교하기위한 수
+    let num = 0;  // 계속진행되는 숫자 0,1,2,3,4,5,6,7....
     //console.log(n,t,m,p);
     while (result.length !== t ) {
         if (!tmp.length) {
@@ -48,15 +48,5 @@ function solution(n, t, m, p) {
         if (i > m) i = 1;
     }
     answer = result.map((v) => v.toUpperCase()).join("");
-    // for (let i = 0; i < t; i ++) {
-    //     console.log(i, p);
-    //     if (i%p != 0) {
-    //         let number = i.toString(n);
-    //         answer+=number;
-    //         console.log(i);
-    //     } else {
-            
-    //     }
-    // }
     return answer;
 }
