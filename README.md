@@ -1,6 +1,6 @@
 # code-test
-Any Test upload everyday!
-
+Any Test upload everyWeek!
+(매일은 무리라는걸 깨닫게됨..)
 
 ### 2021-09-01 SW Expert 구구단2 문제
 Input은 아래와같이 입력받아 처리해야한다.
